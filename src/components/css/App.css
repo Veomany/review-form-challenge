@@ -1,3 +1,28 @@
 body {
-  background-color: #eee;
+  background-color: #F8F8F8;
+}
+
+.item {
+  height: 13vh;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* .forms {
+  height: 100vh;
+  margin-top: -13vh;
+  position: relative;
+} */
+
+.form-position {
+  position: absolute;
+  width: inherit;
+  top: 20%;
+}
+
+.form-heading.ui.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: -13px;
 }
