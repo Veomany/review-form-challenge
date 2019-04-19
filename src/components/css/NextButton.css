@@ -1,0 +1,24 @@
+/* important used to override semantic-ui default settings */
+
+.ui.container.ui.button.color-teal {
+  background-color: #00CA9B;
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+}
+
+.ui.button.color-teal:hover {
+  background-color: #11B683;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.container.ui.button.color-teal {
+    position: absolute;
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    margin: 0 !important;
+  }
+}

@@ -1,23 +1,6 @@
-import React from 'react';
-import '../css/utilities.css';
+import React from 'react'
+import { Rating } from 'semantic-ui-react'
 
-const StarRating = (props) => {
-  return (
-    <div>
-      <form className="ui form">
-        <label className="u-padding-top-bottom-10 u-display-block">
-          {props.label}
-        </label>
-        <div 
-          className="ui star rating"
-          data-rating="3"
-          data-max-rating="5"
-          >
-          This is suppose to have stars
-          </div>
-      </form>
-    </div>
-  );
-}
+const StarRating = () => <Rating className="u-padding-bottom-10" icon='star' size='massive' defaultRating={0} maxRating={5} />
 
 export default StarRating;

@@ -1,0 +1,35 @@
+/* important used to override semantic-ui default settings */
+
+.ui.vertical.menu {
+  width: inherit !important;
+}
+
+.ui.vertical.menu .item:first-child {
+  background-color: #535565;
+  color: #fff;
+}
+
+.ui.vertical.menu .item {
+  height: 50px;
+  display: flex !important;
+  align-items: center;
+}
+
+.ui.vertical.menu .item i.icon {
+  width: 100%  !important;
+  text-align: left !important;
+}
+
+i.icon:before {
+  margin-right: 15px;
+}
+
+.ui.vertical.menu .item.item-task:hover {
+  cursor: pointer;
+  background-color: #00CA9B;
+  color: #fff;
+}
+
+.ui.vertical.menu .item i.icon .icon-font {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}

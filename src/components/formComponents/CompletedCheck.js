@@ -3,13 +3,6 @@ import '../css/RoundButton.css';
 import '../css/utilities.css';
 
 class CompletedForm extends Component {
-  state = { height: 0 };
-
-  setHeight = () => {
-
-    this.setState({})
-  }
-
   render() {
     return (
       <div className="circle">

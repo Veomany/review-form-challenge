@@ -1,0 +1,5 @@
+/* important used to override semantic-ui default settings */
+
+.ui.button {
+  font-weight: normal !important;
+}

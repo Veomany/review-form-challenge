@@ -1,0 +1,11 @@
+.terms-policy {
+  display: inline-flex;
+  padding-top: 110px;
+}
+
+@media only screen and (max-width: 767px) {
+  .terms-policy {
+    font-size: 0.8em;
+    padding-top: 130px;
+  }
+}

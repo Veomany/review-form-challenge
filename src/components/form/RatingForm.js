@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import FormCard from '../formComponents/FormCard';
 import NumberRating from '../formComponents/NumberRating';
 import SingleButton from '../formComponents/SingleButton';
 import CountrySearch from '../formComponents/CountrySearch';
 import '../css/RatingForm.css';
 import '../css/utilities.css';
+import '../css/NextButton.css';
 
 
-class RatingForm extends Component {  
+class RatingForm extends Component { 
   render() {
+
     let productStandoutsItems = ['Accurate Timekeeping', 'High Quality','Durable', 'Elegant', 'Good Weight', 'Versatile', 'Looks Expensive', 'Attracts Compliments', 'Great Gift', 'Great Value'];
   
     let productStandouts = productStandoutsItems.map((productStandouts) => {
@@ -18,35 +21,43 @@ class RatingForm extends Component {
     let ageRangeItems = [ 'Under 18', '18 - 24', '25 - 34', '35 - 44', '45 - 54', '55 - 64', '65+' ];
 
     let ageRange = ageRangeItems.map((ageRange) => {
-      return <SingleButton key={ageRange} className="ui button u-margin-3-5" text={ageRange} />
-      });
-
+      return <SingleButton key={ageRange} className={`u-margin-3-5 ui button`} text={ageRange} />
+    });
+      
     return (
-      <div className="form-position">
+      <div className="rating form-position">
         <FormCard>
-          <NumberRating
-            label="Quality"
-          />
-          <NumberRating
-            label="Design"
-          />
-          <NumberRating
-            label="Experience"
-          />
-
           <div className="u-padding-top-bottom-10">
-            <div>Product Standouts</div>
-            <div>Choose up to 5 that best apply (optional)</div>
-            <div className="u-button-wrap">{productStandouts}</div>  
+            <NumberRating
+              label="Quality"
+            />
+            <NumberRating
+              label="Design"
+            />
+            <NumberRating
+              label="Experience"
+            />
+          </div>
+  
+          <div className="u-padding-top-bottom-10">
+            <div className="title--subheading">
+              Product Standouts
+            </div>
+            <div className="title--action u-padding-bottom-10">
+              Choose up to 5 that best apply (optional)
+            </div>
+            <div className="u-button-wrap">
+              {productStandouts}
+            </div>  
           </div>
 
           <div className="u-padding-top-bottom-10">
             <h4>About You</h4>
             <div className="age-range">
-              <div>Age Range</div>
-              <div className="u-padding-bottom-10">
+              <div className="title--subheading">Age Range</div>
+              <div className="title--action u-padding-bottom-10">
                 Choose
-                <span className="u-font-weight-bold">
+                <span className="u-font-weight-bold u-margin-3-5">
                   one
                 </span>
               </div>
@@ -54,11 +65,11 @@ class RatingForm extends Component {
                 {ageRange}
               </div>  
             </div>
-            <div className="bought-for">
-              <div>Bought For</div>
-              <div className="u-padding-bottom-10">
+            <div className="bought-for u-padding-top-bottom-10">
+              <div className="title--subheading">Bought For</div>
+              <div className="title--action u-padding-bottom-10">
                 Choose
-                <span className="u-font-weight-bold">
+                <span className="u-font-weight-bold u-margin-3-5">
                   one
                 </span>
               </div>
@@ -73,16 +84,24 @@ class RatingForm extends Component {
                 />
               </div> 
             </div>
+            
 
-            <div>Country</div>
+            <div className="u-padding-bottom-10">Country</div>
             <CountrySearch />
           </div>
         </FormCard>
-        
-        <SingleButton
-            className="ui teal button u-display-block u-button-height-70 u-align-center-container"
+
+        <Link to="/media">
+          <SingleButton
+            className="ui button 
+              color-teal
+              btn-rating
+              u-display-block 
+              u-button-height-70 
+              u-align-center-container"
             text="Next"
           />
+        </Link>
       </div>
     );
   }

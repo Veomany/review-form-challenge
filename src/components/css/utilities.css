@@ -1,13 +1,17 @@
 /* important is used to override semantic ui default */
 
 .u-padding-top-bottom-10 { padding: 10px 0; }
+.u-padding-top-bottom-20 { padding: 20px 0; }
 .u-padding-bottom-10 { padding-bottom: 10px; }
-.u-padding-20 { padding: 20px; }
+.u-padding-left-right-20 { padding: 0 20px; }
+.u-padding-left-20 { padding-left: 20px; }
+.u-padding-left-5 { padding-left: 5px; }
 
 .u-margin-3-5 { margin: 3.5px !important; }
 
 .u-display-block { display: block !important; }
 
+.u-align-text-left { text-align: left; }
 .u-align-text-center { text-align: center; }
 .u-align-center-container {
   display: flex !important;
@@ -20,6 +24,6 @@
   flex-wrap: wrap;
 }
 
-.u-button-height-70 { height: 70px; }
+.u-button-height-70 { height: 70px !important; }
 
 .u-font-weight-bold { font-weight: bold; };

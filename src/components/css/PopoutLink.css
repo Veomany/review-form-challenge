@@ -1,0 +1,6 @@
+/* important used to override semantic-ui default settings */
+
+.popout-link-decoration {
+  color: #00CA9B !important;
+  margin-left:5px;
+}

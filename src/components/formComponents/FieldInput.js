@@ -5,10 +5,10 @@ const FieldInput = (props) => {
   return (
     <div>
       <form className="ui form">
-        <label className="u-padding-top-bottom-10 u-display-block">
+        <label className="u-padding-bottom-10 u-display-block">
           {props.label}
         </label>
-        <input type={props.inputType}/>
+        <input type={props.inputType} placeholder={props.placeholder}/>
       </form>
     </div>
   );

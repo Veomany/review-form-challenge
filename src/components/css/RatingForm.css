@@ -1,2 +1,21 @@
+.title--action {
+  color: #a9a9a9;
+}
+
+.ui.button.color-teal.btn-rating {
+  background-color: #00CA9B;
+  color: #fff;
+  font-size: 1.5em;
+  margin: 20px 0;
+  width: 100%;
+}
 
 
+@media only screen and (max-width: 767px) {
+  .ui.button.color-teal.btn-rating {
+    position: absolute;
+    width: 100%;
+    bottom: unset;
+    left: 0;    
+  }
+}

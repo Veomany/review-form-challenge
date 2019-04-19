@@ -8,7 +8,7 @@ const FieldTextArea = (props) => {
         <label className="u-padding-top-bottom-10 u-display-block">
           {props.label}
         </label>
-        <textarea />
+        <textarea placeholder={props.placeholder} />
       </form>
     </div>
   );

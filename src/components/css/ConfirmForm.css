@@ -1,0 +1,39 @@
+.ui.google.plus.button {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.ui.facebook.button {
+  display: block;
+  width: 100%;
+  height: 45px;
+  text-align: left;
+}
+
+.confirm--heading,
+.confirm--subheading {
+  text-align: left;
+  margin: 0;
+}
+
+.ui.button.color-teal {
+  background-color: #00CA9B;
+  color: #fff;
+  height: 50px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.ui.button.color-teal:hover {
+  background-color: #11B683;
+  color: #fff;
+}
+
+.login-border {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+}

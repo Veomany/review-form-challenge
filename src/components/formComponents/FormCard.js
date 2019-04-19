@@ -4,8 +4,8 @@ import '../css/utilities.css';
 
 const FormCard = (props) => {
   return (
-    <div className="card-template u-padding-20">
-      <div>
+    <div className="card-template u-padding-left-right-20 ">
+      <div className="u-padding-top-bottom-10">
         {props.children}
       </div>
     </div>

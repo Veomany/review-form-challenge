@@ -1,5 +1,7 @@
+/* important used to override semantic-ui default settings */
+
 body {
-  background-color: #F8F8F8;
+  background-color: #F8F8F8 !important;
 }
 
 .item {
@@ -8,16 +10,9 @@ body {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* .forms {
-  height: 100vh;
-  margin-top: -13vh;
-  position: relative;
-} */
-
 .form-position {
-  position: absolute;
   width: inherit;
-  top: 20%;
+  margin-top: 30px;
 }
 
 .form-heading.ui.container {
@@ -25,4 +20,41 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   margin: -13px;
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-heading--product {
+  color: #a9a9a9;
+  font-size: 1.2em;
+}
+
+.form-heading--title {
+  font-size: 1.5em;
+}
+
+a {
+  color: #a9a9a9 !important;
+}
+
+.active {
+  color: #00CA9B !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.container {
+    width: 700px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.container {
+    margin-left: 2em !important;
+    margin-right: 2em !important;
+  }
 }
